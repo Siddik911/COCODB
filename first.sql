@@ -39,6 +39,15 @@ INSERT INTO `Trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_address`) 
 INSERT INTO `Trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_address`) VALUES ('10', 'Silva', '45', 'Texas');
 
 
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0011', 'Sara', 'F', 'Salesman', '22');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0012', 'Nora', 'F', 'Sales Manager', '23');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0013', 'Tom', 'M', 'Customer Service', '25');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0014', 'Jeremy', 'M', 'Assistant Manager', '35');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0015', 'Philip', 'M', 'Salesman', '24');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0016', 'Austar', 'M', 'Waiter', '19');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0017', 'Adam', 'M', 'Waiter', '20');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0018', 'Stuard', 'M', 'Chef', '30');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0019', 'Neel', 'M', 'Chef', '32');
 
   
   
