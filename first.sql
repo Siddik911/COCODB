@@ -39,6 +39,9 @@ UPDATE `trial`.`finance_details` SET `transaction_date` = '08/10/2022', `transac
 UPDATE `trial`.`finance_details` SET `transaction_date` = '24/12/2022', `transaction_amount` = '2300' WHERE (`transaction_id` = '8');
 UPDATE `trial`.`finance_details` SET `transaction_date` = '14/2/2023', `transaction_amount` = '7000' WHERE (`transaction_id` = '9');
 UPDATE `trial`.`finance_details` SET `transaction_date` = '23/5/2023', `transaction_amount` = '4000' WHERE (`transaction_id` = '10');
+
+
+
 INSERT INTO `trial`.`finance_details` (`transaction_id`, `transaction_date`, `transaction_amount`) VALUES ('11', '24/06/2023', '5000');
 INSERT INTO `trial`.`finance_details` (`transaction_id`, `transaction_date`, `transaction_amount`) VALUES ('12', '24/06/2023', '1400');
 INSERT INTO `trial`.`finance_details` (`transaction_id`, `transaction_date`, `transaction_amount`) VALUES ('13', '24/07/2023', '2500');
