@@ -16,10 +16,10 @@ CREATE TABLE `Trial`.`food_menu` (
   `transaction_id` INT NOT NULL,
   PRIMARY KEY (`transaction_id`));
   
-  ALTER TABLE `Trial`.`cus_info` 
+ALTER TABLE `Trial`.`cus_info` 
 ADD COLUMN `cus_name` VARCHAR(45) NULL AFTER `cus_id`,
 ADD COLUMN `cus_age` INT NULL AFTER `cus_name`,
-ADD COLUMN `cus_address` VARCHAR(45) NULL AFTER `cus_age`;
+ADD COLUMN `cus_contact` DOUBLE NULL AFTER `cus_age`;
 
 ALTER TABLE `Trial`.`emp_details` 
 ADD COLUMN `emp_name` VARCHAR(45) NULL AFTER `emp_id`,
@@ -27,16 +27,25 @@ ADD COLUMN `emp_gender` VARCHAR(45) NULL AFTER `emp_name`,
 ADD COLUMN `emp_position` VARCHAR(45) NULL AFTER `emp_gender`,
 ADD COLUMN `emp_age` INT NULL AFTER `emp_position`;
 
-INSERT INTO `Trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_address`) VALUES ('01', 'Jhon', '56', 'Newyork');
-INSERT INTO `Trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_address`) VALUES ('02', 'Dey', '34', 'Albama');
-INSERT INTO `Trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_address`) VALUES ('03', 'Chris', '30', 'Texas');
-INSERT INTO `Trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_address`) VALUES ('04', 'Nolan', '60', 'Newyork');
-INSERT INTO `Trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_address`) VALUES ('05', 'Marc', '25', 'Dellas');
-INSERT INTO `Trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_address`) VALUES ('06', 'Pau', '28', 'Buford');
-INSERT INTO `Trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_address`) VALUES ('07', 'Emeka', '40', 'Albama');
-INSERT INTO `Trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_address`) VALUES ('08', 'Sabrina', '22', 'Texas');
-INSERT INTO `Trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_address`) VALUES ('09', 'Sofia', '27', 'Washington');
-INSERT INTO `Trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_address`) VALUES ('10', 'Silva', '45', 'Texas');
+
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('01', 'Juan', '24',   '01453365243');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('02', 'Lagos', '35',  '01398745938');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('03', 'Mahesh', '23', '01845232350');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('04', 'Dalle', '23',  '01335433433');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('05', 'Bille', '24',  '01223455634');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('06', 'Khalid', '26', '01234536363');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('08', 'Ratul ', '27', '01509380938');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('09', 'Rafid ', '28', '01349056334');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('10', 'Hasan', '34',  '01973575534');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('11', 'Sidtaha', '45','01958373334');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('12', 'Aben', '34',   '01293485953');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('13', 'Taha', '23',   '01923459587');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('15', 'Malek', '34',  '01745875735');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('16', 'Karim', '54',  '01390843422');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('17', 'Rahim', '45',  '01293872984');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('18', 'Kumar', '23',  '01234234537');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('19', 'Rayhan', '53', '01230942503');
+INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('20', 'Tahmid', '34', '01839453987');
 
 
 INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0011', 'Sara', 'F', 'Salesman', '22');
@@ -48,17 +57,6 @@ INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_posi
 INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0017', 'Adam', 'M', 'Waiter', '20');
 INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0018', 'Stuard', 'M', 'Chef', '30');
 INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0019', 'Neel', 'M', 'Chef', '32');
-
-  
-UPDATE `Trial`.`emp_details` SET `emp_id` = '1011' WHERE (`emp_id` = '11');
-UPDATE `Trial`.`emp_details` SET `emp_id` = '1012' WHERE (`emp_id` = '12');
-UPDATE `Trial`.`emp_details` SET `emp_id` = '1013' WHERE (`emp_id` = '13');
-UPDATE `Trial`.`emp_details` SET `emp_id` = '1014' WHERE (`emp_id` = '14');
-UPDATE `Trial`.`emp_details` SET `emp_id` = '1015' WHERE (`emp_id` = '15');
-UPDATE `Trial`.`emp_details` SET `emp_id` = '1016' WHERE (`emp_id` = '16');
-UPDATE `Trial`.`emp_details` SET `emp_id` = '1017' WHERE (`emp_id` = '17');
-UPDATE `Trial`.`emp_details` SET `emp_id` = '1018' WHERE (`emp_id` = '18');
-UPDATE `Trial`.`emp_details` SET `emp_id` = '1019' WHERE (`emp_id` = '19');
 INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('1020', 'Ryan', 'M', 'Assistant Chef', '21');
 INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('2001', 'Robert', 'M', 'Branch Manager', '45');
 INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('2012', 'Emyla', 'F', 'Owner', '35');
