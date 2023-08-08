@@ -27,26 +27,7 @@ ADD COLUMN `emp_gender` VARCHAR(45) NULL AFTER `emp_name`,
 ADD COLUMN `emp_position` VARCHAR(45) NULL AFTER `emp_gender`,
 ADD COLUMN `emp_age` INT NULL AFTER `emp_position`;
 
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('01');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('02');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('03');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('04');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('05');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('06');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('07');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('08');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('09');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('10');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('01');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('02');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('03');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('04');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('05');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('06');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('07');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('08');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('09');
-INSERT INTO `Trial`.`emp_details` (`emp_id`) VALUES ('10');
+
 
 UPDATE `trial`.`finance_details` SET `transaction_date` = '12/04/2022', `transaction_amount` = '1200' WHERE (`transaction_id` = '1');
 UPDATE `trial`.`finance_details` SET `transaction_date` = '15/05/2022', `transaction_amount` = '3000' WHERE (`transaction_id` = '2');
@@ -75,9 +56,6 @@ INSERT INTO `trial`.`finance_details` (`transaction_id`, `transaction_date`, `tr
 INSERT INTO `trial`.`finance_details` (`transaction_id`, `transaction_date`, `transaction_amount`) VALUES ('25', '31/05/2024', '7000');
 
 
-
-
-
 INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('01', 'Juan', '24',   '01453365243');
 INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('02', 'Lagos', '35',  '01398745938');
 INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('03', 'Mahesh', '23', '01845232350');
@@ -97,7 +75,28 @@ INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) 
 INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('19', 'Rayhan', '53', '01230942503');
 INSERT INTO `trial`.`cus_info` (`cus_id`, `cus_name`, `cus_age`, `cus_contact`) VALUES ('20', 'Tahmid', '34', '01839453987');
 
-  
+
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0011', 'Sara', 'F', 'Salesman', '22');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0012', 'Nora', 'F', 'Sales Manager', '23');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0013', 'Tom', 'M', 'Customer Service', '25');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0014', 'Jeremy', 'M', 'Assistant Manager', '35');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0015', 'Philip', 'M', 'Salesman', '24');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0016', 'Austar', 'M', 'Waiter', '19');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0017', 'Adam', 'M', 'Waiter', '20');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0018', 'Stuard', 'M', 'Chef', '30');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('0019', 'Neel', 'M', 'Chef', '32');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('1020', 'Ryan', 'M', 'Assistant Chef', '21');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('2001', 'Robert', 'M', 'Branch Manager', '45');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('2012', 'Emyla', 'F', 'Owner', '35');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('2055', 'Reins', 'M', 'Quality Inspector', '33');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('1021', 'Kylen', 'F', 'Waiter', '26');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('1022', 'Cheryl', 'F', 'Waiter', '27');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('1024', 'Nere', 'F', 'Customer Service', '24');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('2000', 'Milan', 'M', 'Owner', '40');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('2010', 'Duran', 'M', 'IT Specialist', '30');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('1025', 'Siliva', 'F', 'Waiter', '22');
+INSERT INTO `Trial`.`emp_details` (`emp_id`, `emp_name`, `emp_gender`, `emp_position`, `emp_age`) VALUES ('1026', 'Reost', 'M', 'Waiter', '20');
+
   
 
 
