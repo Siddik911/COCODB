@@ -26,4 +26,3 @@ CREATE TABLE `cus_spending` (
 LOCK TABLES `cus_spending` WRITE;
 INSERT INTO `cus_spending` VALUES (1,2333),(2,3434),(3,3555),(4,3333),(5,4444);
 UNLOCK TABLES;
-
