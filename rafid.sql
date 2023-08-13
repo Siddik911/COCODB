@@ -3,7 +3,7 @@ CREATE TABLE `emp_info` (
   `emp_id` int NOT NULL,
   `emp_name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`emp_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 
 
@@ -17,7 +17,7 @@ CREATE TABLE `job` (
   `job_name` varchar(45) NOT NULL,
   `sal` int NOT NULL,
   PRIMARY KEY (`job_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 
 LOCK TABLES `job` WRITE;
