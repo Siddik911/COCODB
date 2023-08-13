@@ -55,7 +55,7 @@ CREATE TABLE `food` (
   `food_price` int NOT NULL,
   PRIMARY KEY (`food_id`,`food_price`,`food_name`),
   UNIQUE KEY `food_name_UNIQUE` (`food_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 
 
@@ -70,7 +70,7 @@ CREATE TABLE `job` (
   `job_name` varchar(45) NOT NULL,
   `sal` int NOT NULL,
   PRIMARY KEY (`job_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 
 LOCK TABLES `job` WRITE;
@@ -90,7 +90,7 @@ CREATE TABLE `order_list` (
   KEY `ncus_id_idx` (`cus_id`),
   CONSTRAINT `food_name` FOREIGN KEY (`food_name`) REFERENCES `food` (`food_name`),
   CONSTRAINT `ncus_id` FOREIGN KEY (`cus_id`) REFERENCES `cus_info` (`cus_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 
 
@@ -105,7 +105,7 @@ CREATE TABLE `x` (
   `col2` int NOT NULL,
   `col3` int DEFAULT NULL,
   `col4` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 
 LOCK TABLES `x` WRITE;
