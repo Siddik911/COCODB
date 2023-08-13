@@ -5,7 +5,7 @@ CREATE TABLE `cus_info` (
   `cus_contact` varchar(45) NOT NULL,
   PRIMARY KEY (`cus_id`),
   UNIQUE KEY `cus_id_UNIQUE` (`cus_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 
 
@@ -19,7 +19,7 @@ CREATE TABLE `cus_spending` (
   `cus_id` int NOT NULL,
   `cus_spent` int DEFAULT NULL,
   PRIMARY KEY (`cus_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 
 
