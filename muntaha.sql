@@ -5,7 +5,7 @@ CREATE TABLE `food` (
   `food_price` int NOT NULL,
   PRIMARY KEY (`food_id`,`food_price`,`food_name`),
   UNIQUE KEY `food_name_UNIQUE` (`food_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) 
 
 
 
